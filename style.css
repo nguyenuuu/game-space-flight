@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+canvas {
+    background: url(./images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: url(./images/pointer.png) 17.5 17.5, auto;
+}
+
+body {
+    position: relative;
+}
+
+#score {
+    color: #fff;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -59%);
+    width: 60px;
+    height: 60px;
+    background-color: #2f75cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: url(./images/pointer.png) 17.5 17.5, auto;
+}
+
+#start {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -59%);
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: url(./images/pointer.png) 17.5 17.5, auto;
+    z-index: -1;
+}
+
+h1 {
+    position: absolute;
+    bottom: 10px;
+    background: -webkit-linear-gradient(#8a3ab9, #e95950, #bc2a8d, #fccc63, #fbad50, #cd486b, #4c68d7);
+    /* background: -webkit-linear-gradient(#eee, #333); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    pointer-events: none;
+    animation: slide 25s ease-in-out infinite;
+    letter-spacing: 2px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(375%);
+    }
+}
